@@ -12,7 +12,7 @@ public class Operator04 {
 		System.out.println("result : " + result); // > false 출력.
 		
 		int age = 28;
-		int sex = 1; // 성별 남 : 1, 여자 : 2
+		int sex = 2; // 성별 남 : 1, 여자 : 2
 		if(age >= 19 && sex == 1) {
 			System.out.println("성인 남성입니다.");
 		}

@@ -7,7 +7,7 @@ package section03;
  */
 public class Operator08 {
 	public static void main(String[] args) {
-		int num = 32;
+		int num = -8;
 		
 		String result = num >= 0 ? "num은 양수" : "num은 음수";
 		System.out.println(result);
