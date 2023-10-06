@@ -4,9 +4,9 @@ public class Americano extends Espresso{
 	
 	public int water;
 	
-	public Americano(String bean, String brand int water) {
+	public Americano(String bean, String brand, int water) {
 		super(bean);
-		this.brand = brand;
+		super.brand = brand;
 		this.water = water;
 	}
 	
