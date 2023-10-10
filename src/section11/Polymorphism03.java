@@ -13,14 +13,13 @@ import section11.access2.Coffee;
 import section11.access2.Drink;
 
 public class Polymorphism03 {
-	Scanner scan = null;
+	
 	public static void main(String[] args) {
-	while(true) {	
+		Scanner scan = null;
+		while(true) {	
 		
 		int inputNum = 0;
-		scan = new scanner(System.in);
-		
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		
 		System.out.println("1) 코카콜라 Zero");
 		System.out.println("2) 빽다방 황금라떼");
