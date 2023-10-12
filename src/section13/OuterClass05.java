@@ -14,18 +14,21 @@ public class OuterClass05 {
 
 			@Override
 			public void fly() {
-				// TODO Auto-generated method stub
+				System.out.println("새가 노래를 해요~");
 				
 			}
 
 			@Override
 			public void sing() {
-				// TODO Auto-generated method stub
+				System.out.println("하늘을 날아요~");
 				
 			}
-			
-		}
-	}
-	
+			public void printHello() {
+				System.out.println("안녕하세요~");
+			}
+		};
+	bird.sing();
+	bird.fly();
 
+	}
 }

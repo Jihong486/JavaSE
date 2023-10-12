@@ -1,0 +1,46 @@
+package section14;
+
+import java.util.Scanner;
+
+import section14.access2.InputErrorException;
+
+public class ExceptionClass06 {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		try {
+			//나이입력
+			System.out.println("당신의 나이를 입력하세요. >> ");
+			int age = scan.nextInt();
+			
+			if(age<0) {
+				//0살 미만인 경우 입력실패 ex) '-3'음수값 >> 예외발생시키기.
+				throw new InputErrorException("입력이 잘못되었습니다.");
+				//1.예외발생시, InputErrorException클래스로 던져짐. 그러고 
+				//2. "입력이 잘못되었습니다." 값이 InputErrorException클래스를 통해서 넘어옴.0
+				//3. try,catch로 넘어감.
+			}
+			if(age>19) {
+				System.out.println("성인입니다.");
+			}
+			else if(age>13) {
+				System.out.println("청소년입니다.");
+			}
+			else if(age>6) {
+				System.out.println("어린이입니다.");
+			}
+			else {
+				System.out.println("아동입니다.");
+			}
+
+		}
+		catch(InputErrorException e) {
+			System.out.println(e.getMessage());
+		} 
+		finally {
+			if(scan != null)scan.close();
+		}
+		
+	}
+}

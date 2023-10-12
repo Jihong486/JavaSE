@@ -2,6 +2,7 @@ package section12;
 
 import section12.access2.Cat;
 import section12.access2.HouseCat;
+import section12.access2.Playable;
 
 /*
  * 인터페이스(Interface)
